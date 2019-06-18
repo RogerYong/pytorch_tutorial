@@ -1,0 +1,17 @@
+{
+	"name": "GAN",
+	"dockerFile": "dev.Dockerfile",
+	"appPort": ["8575:8888"],
+	"context": "..",
+	"extensions": [
+		"ms-python.python"
+	],
+	"runArgs": [
+		"--runtime=nvidia"
+	],
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "src=/media/ices/327E75477E7504BF/ywj/gan/workspace,dst=/workspace,type=bind",
+	"settings": {
+		"python.pythonPath": "/usr/local/bin/python"
+	}
+}

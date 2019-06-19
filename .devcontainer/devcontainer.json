@@ -1,6 +1,6 @@
 {
 	"name": "GAN",
-	"dockerFile": "dev.Dockerfile",
+	"dockerFile": "dev1.Dockerfile",
 	"appPort": ["8575:8888"],
 	"context": "..",
 	"extensions": [

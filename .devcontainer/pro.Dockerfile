@@ -7,4 +7,7 @@ COPY .devcontainer/requirements.txt.temp /workspace/
 
 # pro
 # RUN if [ -f "requirements.txt.temp" ]; then conda install --yes --file requirements.txt.temp && rm requirements.txt.temp; fi
-RUN if [ -f "requirements.txt.temp" ]; then pip install --default-timeout=100 -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt.temp && rm requirements.txt.temp; fi
+# pypi source
+# https://pypi.douban.com/simple/
+# https://pypi.tuna.tsinghua.edu.cn/simple
+RUN if [ -f "requirements.txt.temp" ]; then pip install --default-timeout=100 -i https://pypi.douban.com/simple/ -r requirements.txt.temp && rm requirements.txt.temp; fi

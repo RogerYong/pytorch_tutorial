@@ -1,3 +1,4 @@
 data/cifar-10-batches-py
 model/Discriminator_Celeba
 model/Generator_Celeba
+.ipynb_checkpoints
